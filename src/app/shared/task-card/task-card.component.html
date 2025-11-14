@@ -1,0 +1,20 @@
+<div class="card task-card shadow-sm" [@cardAnim] [attr.data-id]="task.id" (click)="open.emit(task)">
+  <div class="card-body">
+    @if (task.priority) {
+      <div class="badge rounded-pill px-3 py-2 priority" [attr.data-priority]="task.priority">{{ task.priority }}</div>
+    }
+
+    <h6 class="card-title mt-2 mb-1">{{ task.title }}</h6>
+    @if (task.description) {
+      <p class="desc-preview mb-2">{{ task.description }}</p>
+    }
+
+    <div class="d-flex align-items-center gap-2 text-secondary small">
+      <span>{{ task.date }}</span>
+    </div>
+  </div>
+  
+  <ng-template cdkDragPlaceholder>
+    <div class="drag-placeholder"></div>
+  </ng-template>
+</div>

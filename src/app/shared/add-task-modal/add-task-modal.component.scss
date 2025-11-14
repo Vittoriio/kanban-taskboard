@@ -1,0 +1,15 @@
+.add-task-modal { border-radius: 24px; box-shadow: 0 20px 40px rgba(0,0,0,0.08); border: none; }
+.add-task-header { align-items: center; justify-content: center; border-bottom: none; position: relative; }
+.add-task-header .modal-title { font-size: 24px; font-weight: 800; color: #000; background: transparent; padding: 0; border-radius: 0; }
+.add-task-header .btn-close { position: absolute; right: 12px; top: 50%; transform: translateY(-50%); }
+.add-task-form .field-row { display: flex; align-items: center; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #f1f3f5; }
+.add-task-form .label { font-weight: 700; color: #1f2937; }
+.add-task-form .value { flex: 1; text-align: right; }
+.add-task-input { border: none; background: transparent; outline: none; text-align: right; width: 100%; }
+.add-task-footer { border-top: none; justify-content: center; }
+.error-text { color: #d6336c; font-size: 12px; margin-top: 4px; }
+
+.add-task-form .desc-row { flex-direction: column; align-items: stretch; justify-content: initial; }
+.add-task-form .desc-row .label { margin-bottom: 8px; }
+.add-task-form .desc-row .value { text-align: left; }
+.add-task-form .desc-row textarea.add-task-input { text-align: left; min-height: 140px; }

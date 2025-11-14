@@ -1,0 +1,16 @@
+.task-details-modal { border-radius: 24px; box-shadow: 0 20px 40px rgba(0,0,0,0.08); border: none; }
+.task-details-header { align-items: center; justify-content: center; border-bottom: none; position: relative; }
+.task-details-header .modal-title { font-size: 24px; font-weight: 800; color: #000; background: transparent; padding: 0; border-radius: 0; }
+.task-details-header .btn-close { position: absolute; right: 12px; top: 50%; transform: translateY(-50%); }
+.task-details-form .field-row { display: flex; align-items: center; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #f1f3f5; }
+.task-details-form .label { font-weight: 700; color: #1f2937; }
+.task-details-form .value { flex: 1; text-align: right; }
+.task-details-input { border: none; background: transparent; outline: none; text-align: right; width: 100%; }
+.task-details-form textarea.task-details-input { text-align: left; white-space: pre-wrap; word-break: break-word; min-height: 120px; }
+.task-details-footer { border-top: none; justify-content: center; gap: 12px; }
+.error-text { color: #d6336c; font-size: 12px; margin-top: 4px; }
+
+.task-details-form .desc-row { flex-direction: column; align-items: stretch; justify-content: initial; }
+.task-details-form .desc-row .label { margin-bottom: 8px; }
+.task-details-form .desc-row .value { text-align: left; }
+.task-details-form .desc-row textarea.task-details-input { text-align: left; min-height: 140px; }

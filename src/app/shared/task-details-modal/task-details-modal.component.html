@@ -1,0 +1,61 @@
+@if (task) {
+  <div class="modal-backdrop fade show"></div>
+  <div class="modal d-block" tabindex="-1" role="dialog" aria-modal="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content task-details-modal">
+        <div class="modal-header task-details-header">
+          <h4 class="modal-title">Task details</h4>
+          <button type="button" class="btn-close" aria-label="Close" (click)="close.emit()"></button>
+        </div>
+        <div class="modal-body">
+          <form [formGroup]="form" id="taskDetailsForm" (ngSubmit)="submit()" class="task-details-form">
+            <div class="field-row">
+              <div class="label">Title</div>
+              <div class="value">
+                <input class="task-details-input" formControlName="title" placeholder="Empty">
+                @if (form.get('title')?.touched && form.get('title')?.invalid) { <div class="error-text">Title is required (min 3)</div> }
+              </div>
+            </div>
+            <div class="field-row desc-row">
+              <div class="label">Description</div>
+              <div class="value"><textarea class="task-details-input" rows="3" formControlName="description" placeholder="Empty"></textarea></div>
+            </div>
+            <div class="field-row">
+              <div class="label">Date</div>
+              <div class="value">
+                <input type="date" class="task-details-input" formControlName="date">
+                @if (form.get('date')?.touched && form.get('date')?.errors?.['required']) { <div class="error-text">Date is required</div> }
+                @if (form.get('date')?.errors?.['past']) { <div class="error-text">Date cannot be in the past</div> }
+              </div>
+            </div>
+            <div class="field-row">
+              <div class="label">Priority</div>
+              <div class="value">
+                <select class="task-details-input" formControlName="priority">
+                  <option>High</option>
+                  <option>Medium</option>
+                  <option>Low</option>
+                  <option>None</option>
+                </select>
+              </div>
+            </div>
+            <div class="field-row">
+              <div class="label">Status</div>
+              <div class="value">
+                <select class="task-details-input" formControlName="status">
+                  <option>Planned</option>
+                  <option>Pending</option>
+                  <option>Completed</option>
+                </select>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer task-details-footer">
+          <button class="btn btn-outline-danger rounded-pill px-4" (click)="delete()">Delete</button>
+          <button class="btn btn-primary rounded-pill px-4" type="submit" form="taskDetailsForm">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+}

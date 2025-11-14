@@ -1,1 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
+/* Global drag overlay for DnD */
+.drag-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  pointer-events: none;
+  transform: translate(-9999px, -9999px);
+}
