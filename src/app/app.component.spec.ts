@@ -14,10 +14,10 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'junior-frontend-developer-task' title`, () => {
+  it(`should have the 'kanban-taskboard' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('junior-frontend-developer-task');
+    expect(app.title).toEqual('kanban-taskboard');
   });
 
   it('should render router outlet', () => {

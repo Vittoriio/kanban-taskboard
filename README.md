@@ -1,27 +1,18 @@
-# Opis zadania
+# Kanban Taskboard
 
-Masz przed sobą działającą, lecz celowo nieestetyczną aplikację do zarządzania listą wydarzeń (todos). Twoim zadaniem jest poprawa wyglądu i funkcjonalności aplikacji przy użyciu Angular, Bootstrap 5 i SCSS.
-## Zakres prac
+## PL
 
-1. Refaktoryzacja UI
-   * popraw wygląd listy zadań,
-   * zadbaj o estetykę, czytelność, spójność stylów oraz responsywność,
-   * usuń niepotrzebne lub błędne style, popraw klasy Bootstrap,
-   * popracuj nad rozwijaniem opisu
-   
-2. Dodaj filtry, które dynamicznie przefiltrują listę wydarzeń. Filtruj według:
-   * nazwy wydarzenia,
-   * daty,
-   * statusu.
-   
-3. Dodaj formularz dodawania nowego zadania (modal)
-   * zadbaj o jego wygląd,
-   * dodaj walidację formularza (nazwa i data wymagane, data nie może być przeszła),
-   * po zapisaniu formularza zadanie powinno pojawić się na liście.
-4. (Opcjonalnie) Jeśli masz czas, to podziel aplikację na mniejsze komponenty
+Lekka aplikacja Kanban do zarządzania zadaniami. Umożliwia tworzenie, edycję i usuwanie zadań, przeciąganie kart między kolumnami oraz filtrowanie i sortowanie listy.
 
+### Funkcje
 
-## Jak uruchomić
+- Tablica Kanban z kolumnami Planned, Pending, Completed
+- Dodawanie i edycja zadań w modalach z walidacją
+- Drag & drop kart między kolumnami
+- Filtrowanie po nazwie, priorytecie i dacie oraz sortowanie
+- Zapisywanie stanu w localStorage
+
+### Uruchomienie
 
 ```bash
 npm install
@@ -37,6 +28,30 @@ Projekt został stworzony za pomocą narzędzi z następującymi wersjami:
 
 > Angular CLI 19.2.0
 
-## Dostarczenie rozwiązania
+## EN
 
-Spakuj projekt jako .zip lub prześlij link do repozytorium na GitHubie.
+A lightweight Kanban app for managing tasks. It supports creating, editing, and deleting tasks, dragging cards between columns, and filtering and sorting the list.
+
+### Features
+
+- Kanban board with Planned, Pending, and Completed columns
+- Add and edit tasks in modals with validation
+- Drag & drop cards between columns
+- Filter by title, priority, and date plus sorting options
+- State persisted in localStorage
+
+### Getting Started
+
+```bash
+npm install
+```
+
+```bash
+npm run start
+```
+
+This project was created with the following tool versions:
+
+> node v22.14.0
+
+> Angular CLI 19.2.0

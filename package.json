@@ -1,5 +1,5 @@
 {
-  "name": "junior-frontend-developer-task",
+  "name": "kanban-taskboard",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",

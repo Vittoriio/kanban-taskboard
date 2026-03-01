@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "junior-frontend-developer-task": {
+    "kanban-taskboard": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/junior-frontend-developer-task",
+            "outputPath": "dist/kanban-taskboard",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "junior-frontend-developer-task:build:production"
+              "buildTarget": "kanban-taskboard:build:production"
             },
             "development": {
-              "buildTarget": "junior-frontend-developer-task:build:development"
+              "buildTarget": "kanban-taskboard:build:development"
             }
           },
           "defaultConfiguration": "development"
